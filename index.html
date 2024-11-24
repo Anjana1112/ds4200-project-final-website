@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unemployment rate study</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        #visualizationSection {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="app.js"></script>
+
+    <div id="intro" class="container">
+        <!-- intro-->
+        <h1> Mental Health Treatment National</h1>
+        <h3>Overall Introduction</h3>
+        <p>Understanding the US unemployment rate is crucial for assessing
+            the health of the economy and the well-being of its citizens. 
+            The unemployment rate represents the percentage of people in 
+            labor force who are actively seeking employment but are unable
+            to find jobs. This metric serves as a key indicator of economic
+             performance, reflecting the availability of job opportunities 
+             and the overall level of economic activity. </p>
+    
+        <p>Monitoring the unemployment rate provides insights into 
+            various aspects of the economy, such as consumer spending,
+             business confidence, and government policies' effectiveness.
+            A high unemployment rate may indicate economic downturns, 
+            leading to decreased consumer spending, reduced business 
+            investments, and potential social unrest. Conversely, 
+            a low unemployment rate signifies a robust economy with 
+            ample job opportunities, contributing to higher consumer 
+            confidence and economic growth.</p>
+        <h3>Introduction to Data</h3>
+        <p>Understanding the US unemployment rate is crucial for assessing
+            the health of the economy and the well-being of its citizens. 
+            The unemployment rate represents the percentage of people in 
+            labor force who are actively seeking employment but are unable
+            to find jobs. This metric serves as a key indicator of economic
+             performance, reflecting the availability of job opportunities 
+             and the overall level of economic activity. </p>
+    
+        <p>Monitoring the unemployment rate provides insights into 
+            various aspects of the economy, such as consumer spending,
+             business confidence, and government policies' effectiveness.
+            A high unemployment rate may indicate economic downturns, 
+            leading to decreased consumer spending, reduced business 
+            investments, and potential social unrest. Conversely, 
+            a low unemployment rate signifies a robust economy with 
+            ample job opportunities, contributing to higher consumer 
+            confidence and economic growth.</p>
+        <p>... </p>
+        
+        <!-- button to visualization-->
+        <button id="viewVisualizations" onclick="showVisualizations()">
+            Data Visualizations
+        </button>
+
+    </div>
+
+    <div id="visualizationSection" class="container-visual">
+
+        <button id="backToIntro" class="back-button" onclick="showIntro()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <div class="slide">
+            
+            <div class="item">
+                <div class="title">
+                    SLIDE 1
+                </div>
+                <div class = 'vis'>
+                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+                <div class="content">
+                    <p>Monitoring the unemployment rate provides insights into 
+            various aspects of the economy, such as consumer spending,
+             business confidence, and government policies' effectiveness.
+            A high unemployment rate may indicate economic downturns, 
+            leading to decreased consumer spending, reduced business 
+            investments, and potential social unrest. Conversely, 
+            a low unemployment rate signifies a robust economy with 
+            ample job opportunities, contributing to higher consumer 
+            confidence and economic growth.</p>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="title">
+                    SLIDE 2
+                </div>
+                <div class = 'vis'>
+                    <iframe src="scatter.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+                <div class="content">
+                    <p>Monitoring the unemployment rate provides insights into 
+            various aspects of the economy, such as consumer spending,
+             business confidence, and government policies' effectiveness.
+            A high unemployment rate may indicate economic downturns, 
+            leading to decreased consumer spending, reduced business 
+            investments, and potential social unrest. Conversely, 
+            a low unemployment rate signifies a robust economy with 
+            ample job opportunities, contributing to higher consumer 
+            confidence and economic growth.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    SLIDE 3
+                </div>
+                <div class = 'vis'>
+                    <iframe src="Facilites_per_capita.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+
+                <div class="content">
+                    <p>Monitoring the unemployment rate provides insights into</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                    SLIDE 4
+                </div>
+                <div class = 'vis'>
+                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+                <div class="content">
+                    <p>Monitoring the unemployment rate provides insights into 
+            various aspects of the economy, such as consumer spending,
+             business confidence, and government policies' effectiveness.
+            A high unemployment rate may indicate economic downturns, 
+            leading to decreased consumer spending, reduced business 
+            investments, and potential social unrest. Conversely, 
+            a low unemployment rate signifies a robust economy with 
+            ample job opportunities, contributing to higher consumer 
+            confidence and economic growth.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">
+                    SLIDE 5
+                </div>
+                <div class = 'vis'>
+                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+                <div class="content">
+                    <p> Unfortunately, this is the 2010 data thus may be different 
+                        than the current economics status. Also, unemployment rate 
+                        may fluctuate seasonally thus adding a time series analysis
+                        will be more informative. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">
+                    SLIDE 6
+                </div>
+                <div class = 'vis'>
+                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+                <div class="content">
+                    <p>Based on the correlation plot, among all the features, poverty 
+                        has the strongest correlation with the unemployment rate since
+                        they are both related to the economics. The percentage of single 
+                        parents is the second important feature which inidicates the 
+                        stability of family is also strongly related to the job market. 
+                        The increase of unemployment rate may also related to the increase 
+                        of violent crime and murder rate but has a negative relationship
+                        with education indicators, like the percentage of people who go to
+                        high school and college. The only variable that has no direct linear
+                        relation with the unemployment rate is Metropolitan, which means the 
+                        percent of residents living in a metropolitan area. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">
+                    SLIDE 7
+                </div>
+                <div class = 'vis'>
+                    <iframe src="Facilites_per_capita.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+                <div class="content">
+                    <p>Monitoring the unemployment rate provides insights into</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">
+                    Conclusion
+                </div>  
+                <div class="content">
+                    <p>Monitoring the unemployment rate provides insights into</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>

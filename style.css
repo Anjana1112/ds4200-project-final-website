@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1400px;
+    height: 800px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.container h1 {
+    margin-top: 0;
+    color: black;
+    text-align: center;
+}
+  .container h3 {
+    margin-top: 20px; 
+    font-size: 1.5rem;
+    color: #333; 
+    text-align: center;
+}
+
+.container p {
+    margin: 20px 40px; 
+    font-size: 1rem; 
+    color: #555; 
+    text-align: center;
+}
+.container button {
+    display: block; 
+    margin: 20px auto; 
+    padding: 15px 30px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    background-color: black; 
+    color: white; 
+    border-radius: 5px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.container button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.container-visual{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1400px;
+    height: 800px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+.back-button {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    background-color: black; 
+    color: white; 
+    border-radius: 5px;
+    padding: 8px 12px; 
+    font-size: 16px; 
+    cursor: pointer;
+    z-index: 1000; 
+}
+.back-button:hover {
+    background-color: #333; /* Slightly lighter black */
+}
+
+
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+    background-color: black; 
+    color: white; 
+}
+
+.button button:hover{
+    background: #424141;
+    color: #fff;
+}
+
+.item .vis {
+    width: 60%; /* Smaller width for the container */
+    height: 550px; /* Adjusted height */
+    margin: 60px; /* Add some spacing around */
+    padding: 10px; /* Optional padding inside the container */
+    background-color: #fff; /* Background for the rectangle */
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex; /* Ensure the iframe is properly contained */
+    justify-content: flex-start; /* Align iframe to the left */
+    align-items: center; /* Center iframe vertically */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.vis iframe {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+}
+
+
+
+.container-visual .slide {
+    display: flex; /* Flex container to arrange slides */
+    flex-direction: column; /* Ensure slides stack vertically */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent overflow from hidden items */
+}
+
+.container-visual .slide .item {
+    display: none; /* Initially hide all items */
+    flex: 1; /* Allow the slide to take full height and width */
+    width: 100%;
+    height: 100%;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.container-visual .slide .item:first-child {
+    display: flex; /* Show the first slide initially */
+}
+.title {
+    position: absolute; /* Position relative to the container */
+    top: 20px; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    font-size: 2rem; /* Adjust the font size */
+    font-weight: bold; /* Make the title bold */
+    text-align: center; /* Center the text */
+    color: #333; /* Optional: title color */
+    margin: 0; /* Reset margins */
+}
+
+.item .content {
+    text-align: center;
+    width: 50%; /* Allocate remaining 50% of the container width */
+    height: 80%;
+    background-color: #ffffff; /* Optional background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Add padding */
+    margin: 50px 20 20 20;/* Reset margins */
+}
+.container-visual .slide .item:not(:nth-child(1)) {
+    display: none; /* Hides all mini slides except the main one */
+}
