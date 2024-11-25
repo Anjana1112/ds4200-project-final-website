@@ -1,0 +1,31 @@
+Source,Target,Count
+Private for-profit,Substance Abuse Treatment: No,1039
+Private for-profit,Substance Abuse Treatment: Yes,1514
+Private nonprofit,Substance Abuse Treatment: No,3299
+Private nonprofit,Substance Abuse Treatment: Yes,4038
+Public agency,Substance Abuse Treatment: No,698
+Public agency,Substance Abuse Treatment: Yes,1024
+Substance Abuse Treatment: No,Treatment at No Charge: No,2588
+Substance Abuse Treatment: No,Treatment at No Charge: Yes,2448
+Substance Abuse Treatment: Yes,Treatment at No Charge: No,2838
+Substance Abuse Treatment: Yes,Treatment at No Charge: Yes,3738
+Treatment at No Charge: No,1.0,321
+Treatment at No Charge: No,2.0,528
+Treatment at No Charge: No,3.0,499
+Treatment at No Charge: No,4.0,460
+Treatment at No Charge: No,5.0,39
+Treatment at No Charge: No,7.0,721
+Treatment at No Charge: No,8.0,73
+Treatment at No Charge: No,9.0,265
+Treatment at No Charge: No,10.0,2318
+Treatment at No Charge: No,11.0,202
+Treatment at No Charge: Yes,1.0,337
+Treatment at No Charge: Yes,2.0,428
+Treatment at No Charge: Yes,3.0,84
+Treatment at No Charge: Yes,4.0,341
+Treatment at No Charge: Yes,5.0,23
+Treatment at No Charge: Yes,7.0,1815
+Treatment at No Charge: Yes,8.0,262
+Treatment at No Charge: Yes,9.0,161
+Treatment at No Charge: Yes,10.0,2571
+Treatment at No Charge: Yes,11.0,164
