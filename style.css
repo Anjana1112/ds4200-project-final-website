@@ -195,3 +195,19 @@ body{
 .container-visual .slide .item:not(:nth-child(1)) {
     display: none; 
 }
+
+#slide-6 .vis.full-width {
+    width: 100%; /* Full width for visualization */
+    margin: 20px 0; /* Vertical spacing */
+    padding: 0; /* Remove padding for a cleaner look */
+    border: none; /* Remove borders */
+    height: 600px; /* Ensure enough height for the Sankey diagram */
+}
+
+#slide-6 .content.full-width {
+    width: 100%; /* Full width for content */
+    max-width: 800px; /* Limit width for readability */
+    margin: 20px auto; /* Center below the visualization */
+    text-align: justify; /* Align text for readability */
+}
+
