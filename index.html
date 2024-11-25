@@ -218,39 +218,105 @@ These papers inform our research on regional disparities, demographic factors, a
                         will be more informative. </p>
                 </div>
             </div>
-            <div class="item">
-                <div class="title">
-                    SLIDE 6
-                </div>
-                <div class="vis" style="text-align: center; margin-bottom: 20px;">
-                    <iframe src="sankey.html" width="100%" height="600px" frameborder="0"></iframe>
-                </div>   
-                <div class="content">
-                    <p>Based on the correlation plot, among all the features, poverty 
-                        has the strongest correlation with the unemployment rate since
-                        they are both related to the economics. The percentage of single 
-                        parents is the second important feature which indicates the 
-                        stability of family is also strongly related to the job market. 
-                        The increase of unemployment rate may also related to the increase 
-                        of violent crime and murder rate but has a negative relationship
-                        with education indicators, like the percentage of people who go to
-                        high school and college. The only variable that has no direct linear
-                        relation with the unemployment rate is Metropolitan, which means the 
-                        percent of residents living in a metropolitan area. </p>
-                </div>
-            </div>
-
+<div class="item" id="slide-6">
+    <div class="title">
+        SLIDE 6
+    </div>
+    <div class="vis full-width">
+        <iframe src="sankey.html" width="100%" height="600px" frameborder="0"></iframe>
+    </div>
+    <div class="content full-width">
+        <p>
+            Based on the correlation plot, among all the features, poverty 
+            has the strongest correlation with the unemployment rate since
+            they are both related to the economics. The percentage of single 
+            parents is the second important feature which indicates the 
+            stability of family is also strongly related to the job market. 
+            The increase of unemployment rate may also be related to the increase 
+            of violent crime and murder rate but has a negative relationship
+            with education indicators, like the percentage of people who go to
+            high school and college. The only variable that has no direct linear
+            relation with the unemployment rate is Metropolitan, which means the 
+            percent of residents living in a metropolitan area.
+        </p>
+    </div>
+</div>
 <div class="item">
     <div class="title">
         SLIDE 7
     </div>
     <div class="vis">
-        <img src="Facilities_per_100k.html" alt="Facilities per 100K" width="100%" height="500px" frameborder="0">
+        <iframe src="Facilities_per_100k.html" width="100%" height="500px" frameborder="0"></iframe>
     </div>
     <div class="content">
-        <p>This slide showcases a key visualization of facilities per 100K population.</p>
+        <p>This map is designed to show a comprehensive view of mental health facility distribution across the United States, balancing both numbers of facilities per 100,000 people. Here are the key takeaways:</p>
+        <ol>
+            <li><strong>Map:</strong>
+                <ul>
+                    <li>The map uses opacity and color intensity to represent the number of facilities per 100,000 people, not just the raw count of facilities.</li>
+                    <li>States with high populations, like California (CA) and Texas (TX), may appear lighter in color despite having a high number of facilities because the population size reduces the facilities-per-100k ratio.
+                        <ul>
+                            <li>For instance, California has 970 facilities, but a facilities-per-100k value of 2.45, resulting in a lighter shade.</li>
+                            <li>Texas has 363 facilities, but with its large population, the facilities-per-100k ratio is only 1.25, making it even lighter in color.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>High-Intensity States:</strong>
+                <ul>
+                    <li>States with smaller populations often have higher facilities per capita, leading to darker shades.</li>
+                    <li>Examples include:
+                        <ul>
+                            <li>Maine (ME): 187 facilities, but with a facilities-per-100k ratio of 13.73.</li>
+                            <li>Vermont (VT): 60 facilities, but a facilities-per-100k ratio of 9.33.</li>
+                        </ul>
+                    </li>
+                    <li>These states illustrate how small populations can result in a high facilities-per-100k ratio even with fewer absolute facilities.</li>
+                </ul>
+            </li>
+            <li><strong>Interactive Features:</strong>
+                <ul>
+                    <li>The map is interactive and allows users to hover over each state to access key details:
+                        <ul>
+                            <li>State Name</li>
+                            <li>The total population of the state.</li>
+                            <li>The number of facilities in the state.</li>
+                            <li>Facilities per 100,000 People: The population-adjusted facility count.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Facility Types and Pie Charts:</strong>
+                <ul>
+                    <li>Clicking on a state marker reveals a pie chart that shows the distribution of facility types in that state.</li>
+                    <li>This gives insight into the types of mental health services offered, such as:
+                        <ul>
+                            <li>Inpatient Psychiatric Facilities</li>
+                            <li>Outpatient/Day Treatment Facilities</li>
+                            <li>Community-Based Mental Health Centers</li>
+                        </ul>
+                    </li>
+                    <li>States with larger populations, such as California (CA) and New York (NY) show a diverse mix dominated by Outpatient/Day Treatment Facilities and Residential Treatment Facilities. The most common facility types across states include Outpatient/Day Treatment Facilities, Community-Based Mental Health Centers, and Residential Treatment Facilities, while smaller categories like Veterans Administration Medical Centers (VAMC) and Multi-setting Mental Health Facilities are consistently less represented. This data provides critical insights into regional disparities and service availability, underscoring opportunities for targeted resource allocation.</li>
+                </ul>
+            </li>
+            <li><strong>Insights on Resource Allocation:</strong>
+                <ul>
+                    <li>This visualization highlights disparities in mental health facility access:</li>
+                    <li>Urbanized states may have high total counts but lower availability per capita.</li>
+                    <li>Less populated states may have fewer total facilities but higher per-capita access.</li>
+                    <li>Policymakers can use this map to identify areas where facilities need to be expanded to address gaps in availability, particularly in states like Texas (TX) and Florida (FL) where the facilities-per-100k values are low relative to their populations.</li>
+                </ul>
+            </li>
+            <li><strong>Underserved Regions:</strong>
+                <ul>
+                    <li>States like Texas (TX) (1.25 facilities per 100k) and Florida (FL) (2.29 facilities per 100k) have both high populations and relatively low facilities-per-100k ratios, indicating potential areas for improvement.</li>
+                    <li>Other states like Nevada (NV) and South Carolina (SC) also fall into lower tiers of facilities-per-100k.</li>
+                </ul>
+            </li>
+        </ol>
     </div>
 </div>
+
 
 
 
