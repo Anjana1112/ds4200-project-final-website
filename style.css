@@ -154,11 +154,6 @@ body{
     height: 100%; 
 }
 
-.vis img {
-    width: 80%;
-    height: 100%; 
-}
-
 .item .content {
     width: 80%; /* Match width with .vis */
     height: auto; /* Allow dynamic height */
