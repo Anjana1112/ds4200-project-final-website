@@ -28,8 +28,8 @@
         d3.json("co_occurrence.json").then(data => {
             const treatments = Object.keys(data);
             const margin = { top: 240, right: 100, bottom: 100, left: 250 };
-            const width = 1000 - margin.left - margin.right;
-            const height = 1000 - margin.top - margin.bottom;
+            const width = 600 - margin.left - margin.right;
+            const height = 600 - margin.top - margin.bottom;
             const cellSize = Math.min(width, height) / treatments.length;
 
             const minValue = d3.min(treatments.map(t => d3.min(treatments.map(o => data[t][o]))));
