@@ -99,29 +99,10 @@ These papers inform our research on regional disparities, demographic factors, a
 
         <div class="slide">
             
-            <div class="item">
-                <div class="title">
-                    SLIDE 1
-                </div>
-                <div class = 'vis'>
-                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
-                </div>   
-                <div class="content">
-                    <p>Monitoring the unemployment rate provides insights into 
-            various aspects of the economy, such as consumer spending,
-             business confidence, and government policies' effectiveness.
-            A high unemployment rate may indicate economic downturns, 
-            leading to decreased consumer spending, reduced business 
-            investments, and potential social unrest. Conversely, 
-            a low unemployment rate signifies a robust economy with 
-            ample job opportunities, contributing to higher consumer 
-            confidence and economic growth.</p>
-                </div>
-            </div>
 
             <div class="item">
                    <div class="title">
-                    Mental Health Treatment Services Offered Trend (2016-2020)
+                    Treatment Services Offered Trend (2016-2020)
                 </div>
                 <div class = 'vis'>
                                       <iframe src="treatment_categories_2016_2020.html" width="100%"" frameborder="0"></iframe>
@@ -147,25 +128,7 @@ These papers inform our research on regional disparities, demographic factors, a
 </p>
                 </div>
             </div>
-            <div class="item">
-                <div class="title">
-                    SLIDE 2
-                </div>
-                <div class = 'vis'>
-                    <iframe src="scatter.html" width="85%" height="550px" frameborder="0"></iframe>
-                </div>   
-                <div class="content">
-                    <p>Monitoring the unemployment rate provides insights into 
-            various aspects of the economy, such as consumer spending,
-             business confidence, and government policies' effectiveness.
-            A high unemployment rate may indicate economic downturns, 
-            leading to decreased consumer spending, reduced business 
-            investments, and potential social unrest. Conversely, 
-            a low unemployment rate signifies a robust economy with 
-            ample job opportunities, contributing to higher consumer 
-            confidence and economic growth.</p>
-                </div>
-            </div>
+
 
 <div class="container-visual slide larger-left-container">
     <div class="item">
@@ -173,15 +136,79 @@ These papers inform our research on regional disparities, demographic factors, a
             <!-- Content for the visualization -->
             <iframe src="Facilites_per_100k.html" width="85%" height="550px" frameborder="0"></iframe>
         </div>
-        <div class="content">
-            <p>Monitoring the unemployment rate provides insights into...</p>
-        </div>
+<div class="content" style="text-align: left; max-height: 150px; overflow-y: auto; padding-right: 10px;">
+        <p>This map is designed to show a comprehensive view of mental health facility distribution across the United States, balancing both numbers of facilities per 100,000 people. Here are the key takeaways:</p>
+        <ol>
+            <li><strong>Map:</strong>
+                <ul>
+                    <li>The map uses opacity and color intensity to represent the number of facilities per 100,000 people, not just the raw count of facilities.</li>
+                    <li>States with high populations, like California (CA) and Texas (TX), may appear lighter in color despite having a high number of facilities because the population size reduces the facilities-per-100k ratio.
+                        <ul>
+                            <li>For instance, California has 970 facilities, but a facilities-per-100k value of 2.45, resulting in a lighter shade.</li>
+                            <li>Texas has 363 facilities, but with its large population, the facilities-per-100k ratio is only 1.25, making it even lighter in color.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>High-Intensity States:</strong>
+                <ul>
+                    <li>States with smaller populations often have higher facilities per capita, leading to darker shades.</li>
+                    <li>Examples include:
+                        <ul>
+                            <li>Maine (ME): 187 facilities, but with a facilities-per-100k ratio of 13.73.</li>
+                            <li>Vermont (VT): 60 facilities, but a facilities-per-100k ratio of 9.33.</li>
+                        </ul>
+                    </li>
+                    <li>These states illustrate how small populations can result in a high facilities-per-100k ratio even with fewer absolute facilities.</li>
+                </ul>
+            </li>
+            <li><strong>Interactive Features:</strong>
+                <ul>
+                    <li>The map is interactive and allows users to hover over each state to access key details:
+                        <ul>
+                            <li>State Name</li>
+                            <li>The total population of the state.</li>
+                            <li>The number of facilities in the state.</li>
+                            <li>Facilities per 100,000 People: The population-adjusted facility count.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Facility Types and Pie Charts:</strong>
+                <ul>
+                    <li>Clicking on a state marker reveals a pie chart that shows the distribution of facility types in that state.</li>
+                    <li>This gives insight into the types of mental health services offered, such as:
+                        <ul>
+                            <li>Inpatient Psychiatric Facilities</li>
+                            <li>Outpatient/Day Treatment Facilities</li>
+                            <li>Community-Based Mental Health Centers</li>
+                        </ul>
+                    </li>
+                    <li>States with larger populations, such as California (CA) and New York (NY) show a diverse mix dominated by Outpatient/Day Treatment Facilities and Residential Treatment Facilities. The most common facility types across states include Outpatient/Day Treatment Facilities, Community-Based Mental Health Centers, and Residential Treatment Facilities, while smaller categories like Veterans Administration Medical Centers (VAMC) and Multi-setting Mental Health Facilities are consistently less represented. This data provides critical insights into regional disparities and service availability, underscoring opportunities for targeted resource allocation.</li>
+                </ul>
+            </li>
+            <li><strong>Insights on Resource Allocation:</strong>
+                <ul>
+                    <li>This visualization highlights disparities in mental health facility access:</li>
+                    <li>Urbanized states may have high total counts but lower availability per capita.</li>
+                    <li>Less populated states may have fewer total facilities but higher per-capita access.</li>
+                    <li>Policymakers can use this map to identify areas where facilities need to be expanded to address gaps in availability, particularly in states like Texas (TX) and Florida (FL) where the facilities-per-100k values are low relative to their populations.</li>
+                </ul>
+            </li>
+            <li><strong>Underserved Regions:</strong>
+                <ul>
+                    <li>States like Texas (TX) (1.25 facilities per 100k) and Florida (FL) (2.29 facilities per 100k) have both high populations and relatively low facilities-per-100k ratios, indicating potential areas for improvement.</li>
+                    <li>Other states like Nevada (NV) and South Carolina (SC) also fall into lower tiers of facilities-per-100k.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
 </div>
 
              <div class="item">
                    <div class="title">
-                    SLIDE 3
-                </div>
+                    Facility Types by Region
+                   </div>
                 <div class = 'vis'>
                     <img src="stackedbar.png" width="70%" height="450px" frameborder="0"></img>
                 </div>   
@@ -209,7 +236,7 @@ These papers inform our research on regional disparities, demographic factors, a
             
             <div class="item">
     <div class="title">
-        SLIDE 3 - Radar Chart
+        Therapy Services vs Facility Types
     </div>
 <div class="vis">
         <img src="Radar chart.png" width="60%" height="450px" alt="Radar chart illustrating therapy services." />
@@ -227,41 +254,6 @@ These papers inform our research on regional disparities, demographic factors, a
 
 </div>
 
-
-
-            <div class="item">
-                <div class="title">
-                    SLIDE 4
-                </div>
-                <div class = 'vis'>
-                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
-                </div>   
-                <div class="content">
-                    <p>Monitoring the unemployment rate provides insights into 
-            various aspects of the economy, such as consumer spending,
-             business confidence, and government policies' effectiveness.
-            A high unemployment rate may indicate economic downturns, 
-            leading to decreased consumer spending, reduced business 
-            investments, and potential social unrest. Conversely, 
-            a low unemployment rate signifies a robust economy with 
-            ample job opportunities, contributing to higher consumer 
-            confidence and economic growth.</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="title">
-                    SLIDE 5
-                </div>
-                <div class = 'vis'>
-                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
-                </div>   
-                <div class="content">
-                    <p> Unfortunately, this is the 2010 data thus may be different 
-                        than the current economics status. Also, unemployment rate 
-                        may fluctuate seasonally thus adding a time series analysis
-                        will be more informative. </p>
-                </div>
-            </div>
 <div class="item">
     <div class="title">
         Sankey Diagram: Ownership → Treatment → Payment Assistance → Facility Type
