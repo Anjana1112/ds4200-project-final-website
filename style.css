@@ -182,32 +182,3 @@ body{
     margin: 0; 
 }
 
-.item .content {
-    text-align: center;
-    width: 50%; 
-    height: 80%;
-    background-color: #ffffff; 
-    border-radius: 10px; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px; 
-    margin: 50px 20 20 20;
-}
-.container-visual .slide .item:not(:nth-child(1)) {
-    display: none; 
-}
-
-.item .vis.full-width {
-    width: 100%; /* Full width for visualization */
-    margin: 20px 0; /* Vertical spacing */
-    padding: 0; /* Remove padding for a cleaner look */
-    border: none; /* Remove borders */
-    height: 600px; /* Ensure enough height for the Sankey diagram */
-}
-
-.item  .content.full-width {
-    width: 100%; /* Full width for content */
-    max-width: 800px; /* Limit width for readability */
-    margin: 20px auto; /* Center below the visualization */
-    text-align: justify; /* Align text for readability */
-}
-
