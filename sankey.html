@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Way Sankey Diagram</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .legend {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background-color: #f9f9f9;
+        }
+        .legend-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>4-Way Sankey Diagram: Ownership → Treatment → Payment Assistance → Facility Type</h1>
+    <div id="sankey" style="width: 100%; height: 700px;"></div>
+
+    <!-- Legend for Facility Types -->
+    <div class="legend">
+        <b>Facility Type Legend:</b>
+        <div class="legend-item">1: Psychiatric Hospital</div>
+        <div class="legend-item">2: Separate inpatient psychiatric unit of a general hospital</div>
+        <div class="legend-item">3: Residential treatment center for children</div>
+        <div class="legend-item">4: Residential treatment center for adults</div>
+        <div class="legend-item">5: Other type of residential treatment facility</div>
+        <div class="legend-item">6: Veterans Administration Medical Center (VAMC)</div>
+        <div class="legend-item">7: Community Mental Health Center (CMHC)</div>
+        <div class="legend-item">8: Certified Community Behavioral Health Clinic (CCBHC)</div>
+        <div class="legend-item">9: Partial hospitalization/day treatment facility</div>
+        <div class="legend-item">10: Outpatient mental health facility</div>
+        <div class="legend-item">11: Multi-setting mental health facility</div>
+    </div>
+
+    <script>
+        const csvPath = './aggregated_flows.csv';
+
+        async function fetchCSVData() {
+            const response = await fetch(csvPath);
+            const data = await response.text();
+            const rows = data.split('\n').slice(1);
+
+            const labels = [];
+            const sources = [];
+            const targets = [];
+            const values = [];
+            const percentages = [];
+
+            let totalFlow = 0;
+
+            // Parse rows
+            rows.forEach(row => {
+                const [source, target, value] = row.split(',');
+
+                if (!source || !target || !value) return;
+
+                const numericValue = parseInt(value, 10);
+                totalFlow += numericValue;
+
+                if (!labels.includes(source)) labels.push(source);
+                if (!labels.includes(target)) labels.push(target);
+
+                sources.push(labels.indexOf(source));
+                targets.push(labels.indexOf(target));
+                values.push(numericValue);
+            });
+
+            values.forEach(value => {
+                percentages.push(((value / totalFlow) * 100).toFixed(2) + '%');
+            });
+
+            return { labels, sources, targets, values, percentages };
+        }
+
+        async function renderSankey() {
+            const { labels, sources, targets, values, percentages } = await fetchCSVData();
+
+            const data = [{
+                type: "sankey",
+                orientation: "h",
+                node: {
+                    pad: 15,
+                    thickness: 20,
+                    line: { color: "black", width: 0.5 },
+                    label: labels
+                },
+                link: {
+                    source: sources,
+                    target: targets,
+                    value: values,
+                    customdata: percentages,
+                    hovertemplate: 
+                        'Source: %{source.label}<br>' +
+                        'Target: %{target.label}<br>' +
+                        'Value: %{value}<br>' +
+                        'Percentage: %{customdata}<extra></extra>'
+                }
+            }];
+
+            const layout = {
+                title: "",
+                font: { size: 12 }
+            };
+
+            Plotly.newPlot('sankey', data, layout);
+        }
+
+        renderSankey();
+    </script>
+</body>
+</html>
