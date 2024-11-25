@@ -27,7 +27,7 @@
     <script>
         d3.json("co_occurrence.json").then(data => {
             const treatments = Object.keys(data);
-            const margin = { top: 180, right: 80, bottom: 80, left: 150 }; // Adjusted margins
+            const margin = { top: 180, right: 80, bottom: 80, left: 190 }; // Adjusted margins
             const graphWidth = 600 - margin.left - margin.right;
             const graphHeight = 600 - margin.top - margin.bottom;
             const cellSize = Math.min(graphWidth, graphHeight) / treatments.length;
@@ -93,12 +93,11 @@
                 .data(treatments)
                 .enter()
                 .append("text")
+                .attr("text-anchor", "start")
                 .attr("transform", (d, i) => {
                     const x = i * cellSize + cellSize / 2;
-                    const y = -10;
-                    return `translate(${x}, ${y}) rotate(-90)`;
+                    return `translate(${x}, -15) rotate(-45)`;
                 })
-                .attr("text-anchor", "start")
                 .style("font-size", "10px")
                 .text(d => d);
 
