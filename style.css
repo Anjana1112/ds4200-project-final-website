@@ -182,3 +182,9 @@ body{
     margin: 0; 
 }
 
+.larger-left-container .item .vis {
+    width: 70%; 
+    height: 600px; 
+}
+
+
