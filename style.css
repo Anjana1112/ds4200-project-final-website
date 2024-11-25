@@ -196,7 +196,7 @@ body{
     display: none; 
 }
 
-#slide-6 .vis.full-width {
+.item .vis.full-width {
     width: 100%; /* Full width for visualization */
     margin: 20px 0; /* Vertical spacing */
     padding: 0; /* Remove padding for a cleaner look */
@@ -204,7 +204,7 @@ body{
     height: 600px; /* Ensure enough height for the Sankey diagram */
 }
 
-#slide-6 .content.full-width {
+.item  .content.full-width {
     width: 100%; /* Full width for content */
     max-width: 800px; /* Limit width for readability */
     margin: 20px auto; /* Center below the visualization */
