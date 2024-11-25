@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unemployment rate study</title>
+    <title>Mental Health Care Disparities</title>
     <link href="style.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -17,7 +17,7 @@
     <script src="app.js"></script>
 
     <div id="intro" class="container">
-        <h1> Mental Health Treatment National</h1>
+        <h1> Mental Health Care Disparities</h1>
         <h3>Introduction to Topic</h3>
         <p> Our project focuses on analyzing mental health service availability 
             and disparities across the United States using data from the National 
@@ -33,34 +33,55 @@
             health needs receive appropriate and timely treatment.
 </p>
     
-        <p>Monitoring the unemployment rate provides insights into 
-            various aspects of the economy, such as consumer spending,
-             business confidence, and government policies' effectiveness.
-            A high unemployment rate may indicate economic downturns, 
-            leading to decreased consumer spending, reduced business 
-            investments, and potential social unrest. Conversely, 
-            a low unemployment rate signifies a robust economy with 
-            ample job opportunities, contributing to higher consumer 
-            confidence and economic growth.</p>
-        <h3>Introduction to Data</h3>
-        <p>Understanding the US unemployment rate is crucial for assessing
-            the health of the economy and the well-being of its citizens. 
-            The unemployment rate represents the percentage of people in 
-            labor force who are actively seeking employment but are unable
-            to find jobs. This metric serves as a key indicator of economic
-             performance, reflecting the availability of job opportunities 
-             and the overall level of economic activity. </p>
-    
-        <p>Monitoring the unemployment rate provides insights into 
-            various aspects of the economy, such as consumer spending,
-             business confidence, and government policies' effectiveness.
-            A high unemployment rate may indicate economic downturns, 
-            leading to decreased consumer spending, reduced business 
-            investments, and potential social unrest. Conversely, 
-            a low unemployment rate signifies a robust economy with 
-            ample job opportunities, contributing to higher consumer 
-            confidence and economic growth.</p>
-        <p>... </p>
+        <h3>References</h3>
+        <p>Gao et al. (2024) highlight a global mental health treatment gap, with only 
+            42-44% seeking care, especially in low- and middle-income nations. Access is 
+            influenced by factors like age, gender, ethnicity, and income, while barriers 
+            include cost, transportation, and stigma.
+            
+Cantor et al. (2024) found that 80% of U.S. mental health facilities offer telehealth, 
+            with services varying by facility type and geography. Urban and private 
+            hospitals are more likely to provide telehealth, but access is uneven, 
+            with median wait times of 14 days.
+            
+Mirza et al. (2020) explored language barriers in mental health care for patients with 
+            limited English proficiency, finding challenges in communication and a lack 
+            of qualified interpreters. The study emphasizes the need for tailored 
+            training to improve care.
+            
+These papers inform our research on regional disparities, demographic factors, and 
+            the growing role of telemedicine, providing essential context for visualizing inequalities in mental health services. </p>
+        <p>
+            
+           <h3>Introduction to Data</h3>   
+            <p> The data being used is from the National Mental Health Services Survey, which 
+                consolidates data from every known mental health treatment facility in the 
+                United States from 2010 to 2020. The types of mental health treatment 
+                facilities included in the dataset are as follows: psychiatric hospitals, 
+                general hospitals, Veterans Affairs medical centers, partial hospitalization/day 
+                treatment mental health facilities, outpatient mental health facilities, residential 
+                treatment centers for children, residential treatment centers for adults, multi-setting 
+                mental health facilities, community mental health centers, non-psychiatric hospitals, and 
+                other (any facilities that don’t fall into the previously named categories). 
+                The topics included in the survey include facility type, operation, and primary treatment 
+                focus, facility treatment characteristics (e.g., settings of care; mental health treatment 
+                modalities, pharmacotherapies; supportive services and practices; services provided to 
+                clients with co occurring mental health and substance use disorders; dedicated or 
+                exclusively designed  programs or groups offered; seclusion or restraint practices; 
+                and crisis intervention team  availability), facility operating characteristics 
+                (e.g., age groups accepted; availability of treatment services  provided in non-English 
+                languages and in sign language for the deaf and hard-of-hearing;  and smoking policy), 
+                facility management characteristics (e.g., quality improvement practices; use of electronic 
+                resources to accomplish work activities; licensure, certification, and accreditation; 
+                sources  of payment and funding), and client characteristics. The data was collected 
+                through secure web-based questionnaires, paper questionnaires sent by mail, and 
+                computer-assisted telephone interviews. In 2020, 14,187 total eligible facilities were surveyed. 
+                The dataset is accessible in formats for SAS, SPSS, Stata, Delimited, and R, and can be 
+                downloaded through the Substance Abuse and Mental Health Services Administration (SAMHSA) website. 
+            </p>
+
+
+
         
         <!-- button to visualization-->
         <button id="viewVisualizations" onclick="showVisualizations()">
@@ -96,7 +117,29 @@
             confidence and economic growth.</p>
                 </div>
             </div>
-            
+
+            <div class="item">
+                   <div class="title">
+                    Mental Health Treatment Services Offered Trend (2016-2020)
+                </div>
+                <div class = 'vis'>
+                   <img src="Treatment_services_2016_2020.png" width="100%"" frameborder="0"></img>
+                </div>   
+
+                <div class="content">
+                    <p>Psychotherapy and Behavioral Therapy remained the most commonly offered services, 
+                        with consistent growth across the years. Psychotherapy increased slightly from 2016 
+                        to 2020, while Behavioral Therapy peaked in 2019. These services' stability suggests 
+                        they are foundational in mental health care, being well-understood and widely accepted 
+                        by both patients and healthcare providers.</p>
+<p>The number of facilities offering Advanced Therapies more than tripled from 2016 to 2020, suggesting a shift 
+                        towards more specialized and innovative technology-driven treatment options, fueled by 
+                        technological advancements, and possibly, the pandemic, which highlighted mental health 
+                        challenges and led to an expansion in available mental health services, possibly due to 
+                        increased funding, innovation, or urgent demand. Dual and Cognitive Therapy saw notable 
+                        growth at the same time which may also be attributed to the above reasons.</p>
+                </div>
+            </div>
             <div class="item">
                 <div class="title">
                     SLIDE 2
@@ -123,6 +166,18 @@
                 </div>
                 <div class = 'vis'>
                     <iframe src="Facilites_per_capita.html" width="85%" height="550px" frameborder="0"></iframe>
+                </div>   
+
+                <div class="content">
+                    <p>Monitoring the unemployment rate provides insights into</p>
+                </div>
+            </div>
+             <div class="item">
+                   <div class="title">
+                    SLIDE 3
+                </div>
+                <div class = 'vis'>
+                   <img src="correlation_plot.png" width="100%" height="500px" frameborder="0"></img>
                 </div>   
 
                 <div class="content">
@@ -167,14 +222,14 @@
                 <div class="title">
                     SLIDE 6
                 </div>
-                <div class = 'vis'>
-                    <iframe src="treatment_categories_2016_2020.html" width="85%" height="550px" frameborder="0"></iframe>
+                <div class="vis" style="text-align: center; margin-bottom: 20px;">
+                    <iframe src="sankey.html" width="100%" height="600px" frameborder="0"></iframe>
                 </div>   
                 <div class="content">
                     <p>Based on the correlation plot, among all the features, poverty 
                         has the strongest correlation with the unemployment rate since
                         they are both related to the economics. The percentage of single 
-                        parents is the second important feature which inidicates the 
+                        parents is the second important feature which indicates the 
                         stability of family is also strongly related to the job market. 
                         The increase of unemployment rate may also related to the increase 
                         of violent crime and murder rate but has a negative relationship
@@ -184,17 +239,21 @@
                         percent of residents living in a metropolitan area. </p>
                 </div>
             </div>
-            <div class="item">
-                <div class="title">
-                    SLIDE 7
-                </div>
-                <div class = 'vis'>
-                    <iframe src="Facilites_per_capita.html" width="85%" height="550px" frameborder="0"></iframe>
-                </div>   
-                <div class="content">
-                    <p>Monitoring the unemployment rate provides insights into</p>
-                </div>
-            </div>
+
+<div class="item">
+    <div class="title">
+        SLIDE 7
+    </div>
+    <div class="vis">
+        <img src="Facilities_per_100k.html" alt="Facilities per 100K" width="100%" height="500px" frameborder="0">
+    </div>
+    <div class="content">
+        <p>This slide showcases a key visualization of facilities per 100K population.</p>
+    </div>
+</div>
+
+
+
             <div class="item">
                 <div class="title">
                     SLIDE 8
