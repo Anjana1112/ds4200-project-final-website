@@ -210,12 +210,51 @@ These papers inform our research on regional disparities, demographic factors, a
                     SLIDE 7
                 </div>
                 <div class = 'vis'>
-                    <iframe src="Facilites_per_capita.html" width="85%" height="550px" frameborder="0"></iframe>
+                    <iframe src="Facilites_per_100k.html" width="85%" height="550px" frameborder="0"></iframe>
                 </div>   
-                <div class="content">
-                    <p>Monitoring the unemployment rate provides insights into</p>
-                </div>
-            </div>
+<div class="content">
+    <p>Monitoring the unemployment rate provides insights into:</p>
+    <ul>
+        <li>The map uses opacity and color intensity to represent the number of facilities per 100,000 people, not just the raw count of facilities.</li>
+        <li>States with high populations, like California (CA) and Texas (TX), may appear lighter in color despite having a high number of facilities because the population size reduces the facilities-per-100k ratio.
+            <ul>
+                <li>California: 970 facilities, but a facilities-per-100k value of 2.45, resulting in a lighter shade.</li>
+                <li>Texas: 363 facilities, but with its large population, the facilities-per-100k ratio is only 1.25, making it even lighter in color.</li>
+            </ul>
+        </li>
+        <li>High-intensity states with smaller populations often have higher facilities per capita, leading to darker shades:
+            <ul>
+                <li>Maine (ME): 187 facilities, with a facilities-per-100k ratio of 13.73.</li>
+                <li>Vermont (VT): 60 facilities, with a facilities-per-100k ratio of 9.33.</li>
+            </ul>
+        </li>
+        <li>The map is interactive and allows users to hover over each state to access key details:
+            <ul>
+                <li>State Name</li>
+                <li>Total population of the state</li>
+                <li>Number of facilities in the state</li>
+                <li>Facilities per 100,000 people</li>
+            </ul>
+        </li>
+        <li>Clicking on a state marker reveals a pie chart that shows the distribution of facility types, such as:
+            <ul>
+                <li>Inpatient Psychiatric Facilities</li>
+                <li>Outpatient/Day Treatment Facilities</li>
+                <li>Community-Based Mental Health Centers</li>
+                <li>Other facility types like Veterans Administration Medical Centers (VAMC) and Multi-setting Mental Health Facilities</li>
+            </ul>
+        </li>
+        <li>Insights into regional disparities and service availability:
+            <ul>
+                <li>Urbanized states may have high total counts but lower availability per capita.</li>
+                <li>Less populated states may have fewer total facilities but higher per-capita access.</li>
+                <li>States like Texas (1.25 facilities per 100k) and Florida (2.29 facilities per 100k) highlight gaps in availability and opportunities for resource allocation.</li>
+            </ul>
+        </li>
+        <li>Policymakers can use this data to address gaps and expand facilities in underserved regions.</li>
+    </ul>
+</div>
+
             <div class="item">
                 <div class="title">
                     Conclusion
