@@ -140,13 +140,14 @@ body{
 .item .vis {
     width: 80%; /* Adjust width for centered layout */
     height: 500px; /* Adjust height as needed */
-    margin: 20px 0; /* Space between visual and content */
+    margin: 60px 20px 0; /* Space between visual and content */
     padding: 10px; 
     background-color: #fff; 
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     overflow: hidden; 
+    
 }
 
 .vis iframe {
