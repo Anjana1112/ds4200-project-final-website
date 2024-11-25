@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap and Network Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .cell {
+            stroke: #ccc;
+            stroke-width: 0.5px;
+        }
+        .tooltip {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px;
+            pointer-events: none;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heatmap of Co-occurrence</h1>
+    <div id="heatmap"></div>
+    <div class="tooltip" id="tooltip"></div>
+    <script>
+        d3.json("co_occurrence.json").then(data => {
+            const treatments = Object.keys(data);
+            const margin = { top: 240, right: 100, bottom: 100, left: 250 };
+            const width = 1000 - margin.left - margin.right;
+            const height = 1000 - margin.top - margin.bottom;
+            const cellSize = Math.min(width, height) / treatments.length;
+
+            const minValue = d3.min(treatments.map(t => d3.min(treatments.map(o => data[t][o]))));
+            const maxValue = d3.max(treatments.map(t => d3.max(treatments.map(o => data[t][o]))));
+            
+            const colorScale = d3.scaleSequential(d3.interpolateRdPu)
+                .domain([7000, 8000]);
+
+            const svg = d3.select("#heatmap")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const tooltip = d3.select("#tooltip");
+
+            svg.selectAll(".cell")
+                .data(treatments.flatMap((t1, i) => treatments.map((t2, j) => ({ 
+                    x: i, 
+                    y: j, 
+                    value: data[t1][t2],
+                    treatment1: t1,
+                    treatment2: t2
+                }))))
+                .enter()
+                .append("rect")
+                .attr("class", "cell")
+                .attr("x", d => d.y * cellSize)
+                .attr("y", d => d.x * cellSize)
+                .attr("width", cellSize)
+                .attr("height", cellSize)
+                .attr("fill", d => colorScale(d.value))
+                .on("mouseover", (event, d) => {
+                    tooltip.style("visibility", "visible")
+                        .html(`${d.treatment1} × ${d.treatment2}<br>Value: ${d.value.toLocaleString()}`);
+                })
+                .on("mousemove", (event) => {
+                    tooltip.style("top", `${event.pageY + 10}px`)
+                        .style("left", `${event.pageX + 10}px`);
+                })
+                .on("mouseout", () => {
+                    tooltip.style("visibility", "hidden");
+                });
+
+            // Row labels
+            svg.selectAll(".row-label")
+                .data(treatments)
+                .enter()
+                .append("text")
+                .attr("x", -25)
+                .attr("y", (d, i) => i * cellSize + cellSize / 2)
+                .attr("dy", "0.35em")
+                .attr("text-anchor", "end")
+                .style("font-size", "12px")
+                .text(d => d);
+
+            // Column labels with much steeper angle and more spacing
+            svg.selectAll(".col-label")
+                .data(treatments)
+                .enter()
+                .append("text")
+                .attr("transform", (d, i) => {
+                    const x = i * cellSize + cellSize / 2;
+                    const y = -10;
+                    return `translate(${x}, ${y}) rotate(-90)`;
+                })
+                .attr("text-anchor", "start")
+                .style("font-size", "12px")
+                .text(d => d);
+
+            // Color legend
+            const legendHeight = 20;
+            const legendWidth = 200;
+
+            const legend = svg.append("g")
+                .attr("transform", `translate(50, ${height + 50})`);
+
+            const gradient = svg.append("defs")
+                .append("linearGradient")
+                .attr("id", "gradient")
+                .attr("x1", "0%")
+                .attr("x2", "100%")
+                .attr("y1", "0%")
+                .attr("y2", "0%");
+
+            gradient.append("stop")
+                .attr("offset", "0%")
+                .attr("stop-color", colorScale(7000));
+
+            gradient.append("stop")
+                .attr("offset", "100%")
+                .attr("stop-color", colorScale(8000));
+
+            legend.append("rect")
+                .attr("width", legendWidth)
+                .attr("height", legendHeight)
+                .style("fill", "url(#gradient)");
+
+            legend.append("text")
+                .attr("x", 0)
+                .attr("y", -5)
+                .text("Co-occurrence Scale")
+                .style("font-size", "12px");
+
+            const legendScale = d3.scaleLinear()
+                .domain([7000, 8000])
+                .range([0, legendWidth]);
+
+            legend.append("g")
+                .attr("transform", `translate(0, ${legendHeight})`)
+                .call(d3.axisBottom(legendScale).ticks(5).tickFormat(d3.format(",")));
+        });
+    </script>
+</body>
+</html>
