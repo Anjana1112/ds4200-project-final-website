@@ -63,4 +63,9 @@ window.onload = () => {
     const introSection = document.getElementById('intro');
 
     visualizationSection.style.display = 'none'; // Initially hide visualizations
-    introSection.styl
+    introSection.style.display = 'block'; // Show intro
+
+    // Initialize slideshow functionality
+    initializeSlideshow();
+};
+
