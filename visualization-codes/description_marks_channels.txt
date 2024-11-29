@@ -14,9 +14,9 @@
   Tasks:
 
 4. Treatment Services Offered Trend (2016-2020)
-  Marks: 
-  Channels: 
-  Tasks:
+  Marks: lines (trend of each service); points (emphasize data for specific years on each line)
+  Channels: color (for each service); line marks (for number of facilities) with aligned vertical position; horizontal position with year
+  Tasks: Understanding how the number of facilities offering specific treatments has changed over the years and comparing growth patterns across different treatment categories.
 
 5. Sankey (Interactive)
   Marks: 
