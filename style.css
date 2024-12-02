@@ -64,5 +64,3 @@ h1 {
 .text {
     flex: 1; /* Allow text to grow to fill remaining space */
 }
-
-
