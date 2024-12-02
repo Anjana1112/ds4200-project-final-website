@@ -18,7 +18,16 @@ Description of Visualizations:
   - Exploration: Interact with the map to explore detailed information for individual states, such as population and facility counts.
   - Trend Analysis: Detect geographic trends or patterns in mental health facility distribution across regions (e.g., high-access rural states 
     vs. low-access urban states).
-This map highlights significant disparities in mental health facility distribution across the United States, focusing on facilities per 100,000 people rather than raw counts. States with large populations, like California and Texas, exhibit low facilities-per-100k ratios (2.45 and 1.25, respectively) despite having high total facility counts, while smaller, less populated states such as Maine (13.73) and Vermont (9.33) have higher ratios. The interactive features of the map provide detailed insights into state-level population-adjusted facility counts and allow users to explore facility type distributions through horizontal bar charts. Common facility types, such as Outpatient/Day Treatment Facilities and Community-Based Mental Health Centers, dominate across most states, whereas categories like Veterans Administration Medical Centers (VAMC) are less prevalent. This analysis underscores how urbanized states may face lower per-capita access despite higher total facilities, while less populated states often enjoy better per-capita access. Policymakers can leverage these findings to address gaps in underserved regions, particularly in states like Texas and Florida, which have low facilities-per-100k ratios, and to improve resource allocation where mental health services are most needed.
+This map highlights significant disparities in mental health facility distribution across the United States, focusing on facilities
+per 100,000 people rather than raw counts. States with large populations, like California and Texas, exhibit low facilities-per-100k ratios
+(2.45 and 1.25, respectively) despite having high total facility counts, while smaller, less populated states such as Maine (13.73) and 
+Vermont (9.33) have higher ratios. The interactive features of the map provide detailed insights into state-level population-adjusted 
+facility counts and allow users to explore facility type distributions through horizontal bar charts. Common facility types, such 
+as Outpatient/Day Treatment Facilities and Community-Based Mental Health Centers, dominate across most states, whereas categories like 
+Veterans Administration Medical Centers (VAMC) are less prevalent. This analysis underscores how urbanized states may face lower 
+per-capita access despite higher total facilities, while less populated states often enjoy better per-capita access. Policymakers 
+can leverage these findings to address gaps in underserved regions, particularly in states like Texas and Florida, which have low 
+facilities-per-100k ratios, and to improve resource allocation where mental health services are most needed.
 
     
 2. Facility Types by Region 
