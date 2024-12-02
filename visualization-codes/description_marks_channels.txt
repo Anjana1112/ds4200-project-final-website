@@ -18,8 +18,8 @@ Description of Visualizations:
   - Exploration: Interact with the map to explore detailed information for individual states, such as population and facility counts.
   - Trend Analysis: Detect geographic trends or patterns in mental health facility distribution across regions (e.g., high-access rural states 
     vs. low-access urban states).
-  
-  
+This map highlights significant disparities in mental health facility distribution across the United States, focusing on facilities per 100,000 people rather than raw counts. States with large populations, like California and Texas, exhibit low facilities-per-100k ratios (2.45 and 1.25, respectively) despite having high total facility counts, while smaller, less populated states such as Maine (13.73) and Vermont (9.33) have higher ratios. The interactive features of the map provide detailed insights into state-level population-adjusted facility counts and allow users to explore facility type distributions through horizontal bar charts. Common facility types, such as Outpatient/Day Treatment Facilities and Community-Based Mental Health Centers, dominate across most states, whereas categories like Veterans Administration Medical Centers (VAMC) are less prevalent. This analysis underscores how urbanized states may face lower per-capita access despite higher total facilities, while less populated states often enjoy better per-capita access. Policymakers can leverage these findings to address gaps in underserved regions, particularly in states like Texas and Florida, which have low facilities-per-100k ratios, and to improve resource allocation where mental health services are most needed.
+
     
 2. Facility Types by Region 
   Marks:
@@ -36,6 +36,9 @@ Description of Visualizations:
   - Comparison: Compare the total facilities per 100,000 people across regions. Compare facility type distributions (e.g., dominance of   
     Outpatient/Day Treatment Facilities).
   - Trend Analysis: Observe regional patterns in facility availability.
+
+This bar chart provides a regional comparison of mental health facility distribution across the United States, highlighting notable disparities in facilities per 100,000 people. The Northeast leads with the highest facilities-per-capita ratio, driven by Outpatient/Day Treatment Facilities and Community-Based Mental Health Centers, while the Midwest follows with a balanced distribution dominated by the same facility types. The West shows fewer facilities per capita, with Outpatient/Day Treatment Facilities making up the largest share, and the South has the lowest facilities-per-capita ratio, with minimal contributions from most facility types. Outpatient/Day Treatment Facilities emerge as the dominant facility type across all regions, underscoring their critical role in mental health service delivery. Regional specialization is also evident, with the Northeast having a relatively higher proportion of Inpatient Psychiatric Facilities and Multi-setting Mental Health Facilities, and the Midwest emphasizing Community-Based Mental Health Centers. However, Veterans Administration Medical Centers (VAMC) remain a consistently small proportion in all regions, suggesting limited availability. The South’s low facilities-per-capita ratio across categories raises equity concerns, pointing to potential disparities in mental health service availability that require targeted intervention.
+
 
 3. Therapy Services vs Facility Types
   Marks:
@@ -56,6 +59,7 @@ Description of Visualizations:
   - Distribution Analysis: Analyze how therapy services are distributed across facility types and how certain services (e.g., Telemedicine) vary 
     in availability.
 
+This radar chart highlights the availability of various therapy services across different facility types, showcasing notable trends and disparities. Telemedicine is predominantly available at Veterans Administration facilities, reflecting their commitment to remote access for veterans who often reside offsite. Language services are most prevalent in inpatient facilities and community-based centers, emphasizing inclusivity, while residential facilities lag significantly in this area, suggesting limited accessibility for non-English-speaking individuals. Cognitive Behavioral Therapy and Group Therapy stand out as foundational services, widely offered across all facility types, as indicated by their proximity to the chart's outer edge. Trauma therapy, though broadly available, is notably underprovided in residential and inpatient facilities, raising concerns given the potential need for trauma-informed care in these settings. Activity therapy is most prevalent in residential and inpatient facilities, aligning with their focus on structured, long-term care, while other facility types offer this service far less frequently. Overall, the chart underscores the widespread availability of core therapies, such as cognitive behavioral and group therapies, while identifying significant service gaps in telemedicine, trauma therapy, and language services, particularly in residential facilities. These findings point to opportunities for improving therapy service accessibility and diversity across specific facility types.
 
 
 4. Treatment Services Offered Trend (2016-2020)
