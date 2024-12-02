@@ -3,18 +3,60 @@ Website link: https://anjana1112.github.io/ds4200-project-final-website/
 Description of Visualizations:
 1. Number of Facilities per 100k Across the US (Interactive)
   Marks: 
-  Channels: 
-  Tasks:
+  - Areas: The states on the choropleth map are represented as polygons (geographic areas).
+  - Points: Blue tooltips represent state-level specific data points (like facility types in a particular region).
   
-2. Facility Types by Region 
-  Marks: 
-  Channels: 
+  Channels:
+  - Color: The intensity of the color (e.g., shades of blue) represents the Facilities per 100k value, with darker colors indicating higher 
+    values and lighter colors indicating lower values.
+  - Position: The geographic position (latitude and longitude) maps the data to the specific location of states on the map.
+  - Area: The size of the polygons (state areas) reflects their geographic size, though it doesn't directly encode Facilities per 100k.
+  - Tooltip (Interactive): State-level details like name, population, and exact Facilities per 100k values are accessible via interaction.
+  
   Tasks:
+  - Comparison: Compare the Facilities per 100k ratio across states using the color intensity.
+  - Exploration: Interact with the map to explore detailed information for individual states, such as population and facility counts.
+  - Trend Analysis: Detect geographic trends or patterns in mental health facility distribution across regions (e.g., high-access rural states 
+    vs. low-access urban states).
+  
+  
+    
+2. Facility Types by Region 
+  Marks:
+  - Area: Stacked bar segments represent the values for different facility types within each region.
+
+  Channels:
+  - Position: The vertical position of the bars encodes the total and relative contribution of facility types. The horizontal position 
+    shows the region 
+  - Color: Each facility type is assigned a unique color, allowing viewers to distinguish between them.
+  - Size: The area/height (length) of each bar segment shows the magnitude of that facility type's contribution.
+  - Text: The numeric values displayed as text on each bar segment provide exact counts (e.g., 0.2, 2.5).
+
+  Tasks:
+  - Comparison: Compare the total facilities per 100,000 people across regions. Compare facility type distributions (e.g., dominance of   
+    Outpatient/Day Treatment Facilities).
+  - Trend Analysis: Observe regional patterns in facility availability.
 
 3. Therapy Services vs Facility Types
-  Marks: 
-  Channels: 
+  Marks:
+  - Lines: Each facility type is represented by a distinct line connecting the axes of the radar chart.
+  The lines represent the relative values (percentages) of therapy services offered by each facility type.
+  
+  Channels:
+  - Position: The position of points along each axis represents the percentage of facilities offering a specific therapy service (e.g., 
+    Cognitive Behavioral Therapy, Telemedicine). The radial position (distance from the center) encodes the percentage value.
+  - Color: Each facility type is distinguished by a unique color, allowing viewers to easily identify and compare them.
+  - Length: The length of the line segments (from the center outward) represents the magnitude (percentage) for each axis.
+  - Connection: Lines connect data points for a single facility type, helping to visualize the "profile" of therapy services for that type.
+  - Text:Percentages along the axes are textual channel
+  
   Tasks:
+  - Comparison: Compare therapy service offerings between different facility types (e.g., which facility type offers Cognitive Behavioral 
+    Therapy the most?).
+  - Distribution Analysis: Analyze how therapy services are distributed across facility types and how certain services (e.g., Telemedicine) vary 
+    in availability.
+
+
 
 4. Treatment Services Offered Trend (2016-2020)
   Marks: lines (trend of each service); points (emphasize data for specific years on each line)
