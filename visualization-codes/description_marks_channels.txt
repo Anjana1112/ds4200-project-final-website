@@ -97,8 +97,29 @@ facilities. These findings point to opportunities for improving therapy service 
 
 5. Sankey (Interactive)
   Marks: 
+  - Nodes: Represent distinct categories or variables in the flow (e.g., "Private nonprofit," "Substance Abuse Treatment: Yes,").
+  - Links: Represent flows or connections between nodes, visualized as curved or straight bands.
+  - Widths: The thickness of the links encodes the magnitude of the flow between two connected nodes.
+
   Channels: 
-  Tasks:
+  - Position: Nodes are aligned vertically, with flows between them spanning horizontally.
+  - Size: The width of the links encodes the quantity or magnitude of the flow.
+  - Labels: Text annotations provide context for nodes and link values, making the diagram readable and informative.
+  - Tooltip (Interactive): Displays detailed information (e.g., source, target, magnitude, and percentage of flow) when hovering over a link.
+
+  Tasks: 
+  - Flow Analysis: Trace how ownership types are connected to treatment offerings and how they further relate to payment assistance and facility types.
+  - Comparison: Compare the magnitude of flows between different nodes to identify dominant connections (e.g., "Substance Abuse Treatment: Yes" has a stronger flow to "Private nonprofit" than to other ownership types).
+
+This Sankey diagram gives us a clear picture of how facilities are distributed in terms of ownership, treatment offerings, payment 
+assistance, and facility types. It’s encouraging to see that most facilities offer substance abuse treatment and a large number also 
+provide treatment at no charge. However, the bigger picture reveals that while these numbers seem positive, they’re not enough. The flows 
+show significant gaps in accessibility and support, especially when we consider the broader demand for mental health and substance abuse 
+services. Hovering over each link further enhances the analysis by providing detailed information on each flow, such as the exact magnitude 
+and percentage of connections between nodes, allowing for a deeper understanding of specific relationships and disparities in the system. 
+Even with nonprofit and public agencies taking on a significant role, many people still struggle to access affordable care in their 
+communities. This diagram highlights how the system works—but also how much more needs to be done to close the gaps and ensure everyone who 
+needs help can actually get it.
 
 6. Co-occurance of Treatment Offerings (Interactive)
   Marks: 
