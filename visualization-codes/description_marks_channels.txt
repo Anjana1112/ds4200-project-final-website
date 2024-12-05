@@ -121,12 +121,16 @@ Even with nonprofit and public agencies taking on a significant role, many peopl
 communities. This diagram highlights how the system works—but also how much more needs to be done to close the gaps and ensure everyone who 
 needs help can actually get it.
 
-6. Co-occurance of Treatment Offerings (Interactive)
-  Marks: 
-  Channels: 
-  Tasks:
 
 7. Treatments Offered By State (Interactive)
   Marks: 
   Channels: 
   Tasks:
+
+
+This graph allows you to filter for a state and a drug group and it will show the different treatment options the state offers for each drug type 
+and the number of facilities that offer each treatment option. Notice how in every state, the range of facilities that offer the drugs for each 
+treatment groups remains the same (in alaska the range for each drug type is about 4-25) and that there are simply less treatment options for some 
+drug groups than the others. For instance, there are 16 different types of treatment options for bipolar disorder and there are only 4 types of 
+Treatment-Resistant Treatments. Adjunctive Antidepressants and Treatment-Resistant Treatments are typically used for those who do not repond 
+adequately to standard treatment. For these individuals whose circumstances are already unique, we must continue to research to provide them with more treatment options and alternatives in the future. 
