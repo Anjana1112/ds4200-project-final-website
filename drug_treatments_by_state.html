@@ -175,7 +175,6 @@
                 // Group dropdown
                 const groupSelect = d3.select('#group-select');
 
-                // Modify this line to remove the duplicate "All Drugs"
                 const groupOptions = ["All Drugs", ...Object.keys(this.groups).sort()];
                 groupSelect
                     .selectAll('option')
