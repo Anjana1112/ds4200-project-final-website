@@ -763,6 +763,7 @@ drug_dict = {
     "ZIPRA": "Ziprasidone"
 }
 
+treatments_by_state.rename(columns=drug_dict, inplace=True)
 drug_df = pd.DataFrame(list(drug_dict.items()), columns=["Abbreviation", "Full Name"])
 
 # Rename groups to use full names of drugs rather than abbreviations

@@ -124,8 +124,19 @@ needs help can actually get it.
 
 7. Treatments Offered By State (Interactive)
   Marks: 
+  - Bars: Each Treatment is represented by a bar
+  - Tooltip: A tooltip appears when hovering over a bar, showing the name of the drug and the quantity of facilities offering that treatment
+  - Dropdown: The dropdown menus represent the state and treatment group whose information is being displayed.
   Channels: 
-  Tasks:
+  - Length: The length of bars represents the magnitude of facilities that offer the given treatment.
+  - Color: The color of the bar represents whether or not the curor is hovering over the bar.
+  - Text: The text of the dropdown menus represents the current state of the graph (state and treatment group).
+          The tooltip text provides details about the drug name and the number of facilities offering that treatment  
+  Tasks: 
+  - Exploration: Interact with the filters for state and treatment group to explore the available treatment options and their quantities. 
+                 Hover over each bar to get more details on the treatment name and facility quantity. 
+  - Comparison: Compare the number of treatment options available for each treatment group and the number of facilities that offer each treatment option.
+                You could also compare how the metrics above differ between each state.   
 
 
 This graph allows you to filter for a state and a drug group and it will show the different treatment options the state offers for each drug type 
