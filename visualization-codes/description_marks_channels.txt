@@ -94,6 +94,9 @@ facilities. These findings point to opportunities for improving therapy service 
   Marks: lines (trend of each service); points (emphasize data for specific years on each line)
   Channels: color (for each service); line marks (for number of facilities) with aligned vertical position; horizontal position with year
   Tasks: Understanding how the number of facilities offering specific treatments has changed over the years and comparing growth patterns across different treatment categories.
+Psychotherapy and Behavioral Therapy remained the most commonly offered mental health services, showing growth from 2016 to 2020, with dips in between which may be due to funding issues or shift in focus to other resources. Being offered by the most number of facilities underscores their foundational role in mental health care, as they are well-understood, evidence-based, and widely accepted by both patients and healthcare providers.The number of facilities offering Advanced Therapies more than tripled during this period, reflecting a shift toward specialized, technology-driven treatment options. This trend may have been driven by advancements in technology, increased funding for mental health services, and the COVID-19 pandemic, which created urgent demand for innovative solutions. Dual Therapy and Cognitive Therapy also saw notable growth, likely influenced by the same factors, including an expanded focus on integrative and personalized care.
+Similarly, Trauma and Activity-Based Therapies experienced steady growth, signaling a growing recognition of the value of trauma-informed care and non-traditional interventions in improving mental health outcomes.
+
 
 5. Sankey (Interactive)
   Marks: 
